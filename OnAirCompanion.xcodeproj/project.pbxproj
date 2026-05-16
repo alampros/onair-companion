@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C20000000000000000000001 /* OnAirCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000001 /* OnAirCompanionApp.swift */; };
+		C20000000000000000000002 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000002 /* MenuBarView.swift */; };
+		C20000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000003 /* Assets.xcassets */; };
+		C20000000000000000000004 /* TeamsMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000006 /* TeamsMessage.swift */; };
+		C20000000000000000000005 /* TeamsMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000007 /* TeamsMessageTests.swift */; };
+		C20000000000000000000006 /* TeamsMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000009 /* TeamsMonitor.swift */; };
+		C20000000000000000000007 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000A /* Debouncer.swift */; };
+		C20000000000000000000008 /* DebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000B /* DebouncerTests.swift */; };
+		C20000000000000000000009 /* PluginMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000C /* PluginMessage.swift */; };
+		C2000000000000000000000A /* PluginMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000D /* PluginMessageTests.swift */; };
+		C2000000000000000000000B /* PluginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000E /* PluginClient.swift */; };
+		C2000000000000000000000C /* ServerDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3000000000000000000000F /* ServerDiscovery.swift */; };
+		C2000000000000000000000D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000010 /* AppState.swift */; };
+		C2000000000000000000000E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000011 /* AppCoordinator.swift */; };
+		C2000000000000000000000F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000012 /* SettingsView.swift */; };
+		C20000000000000000000010 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000013 /* LaunchAtLogin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C30000000000000000000001 /* OnAirCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAirCompanionApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000002 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		C30000000000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30000000000000000000005 /* OnAirCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnAirCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000006 /* TeamsMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsMessage.swift; sourceTree = "<group>"; };
+		C30000000000000000000007 /* TeamsMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsMessageTests.swift; sourceTree = "<group>"; };
+		C30000000000000000000008 /* OnAirCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnAirCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000009 /* TeamsMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsMonitor.swift; sourceTree = "<group>"; };
+		C3000000000000000000000A /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		C3000000000000000000000B /* DebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncerTests.swift; sourceTree = "<group>"; };
+		C3000000000000000000000C /* PluginMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMessage.swift; sourceTree = "<group>"; };
+		C3000000000000000000000D /* PluginMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMessageTests.swift; sourceTree = "<group>"; };
+		C3000000000000000000000E /* PluginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginClient.swift; sourceTree = "<group>"; };
+		C3000000000000000000000F /* ServerDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDiscovery.swift; sourceTree = "<group>"; };
+		C30000000000000000000010 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C30000000000000000000011 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C30000000000000000000012 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C30000000000000000000013 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C40000000000000000000001 /* Project Root */ = {
+			isa = PBXGroup;
+			children = (
+				C40000000000000000000002 /* OnAirCompanion */,
+				C40000000000000000000008 /* OnAirCompanionTests */,
+				C30000000000000000000004 /* Info.plist */,
+				C40000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C40000000000000000000002 /* OnAirCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000001 /* OnAirCompanionApp.swift */,
+				C40000000000000000000003 /* Views */,
+				C40000000000000000000007 /* Models */,
+				C40000000000000000000004 /* Services */,
+				C40000000000000000000005 /* Utilities */,
+				C30000000000000000000003 /* Assets.xcassets */,
+			);
+			path = OnAirCompanion;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000002 /* MenuBarView.swift */,
+				C30000000000000000000012 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000011 /* AppCoordinator.swift */,
+				C3000000000000000000000E /* PluginClient.swift */,
+				C3000000000000000000000F /* ServerDiscovery.swift */,
+				C30000000000000000000009 /* TeamsMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000005 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C3000000000000000000000A /* Debouncer.swift */,
+				C30000000000000000000013 /* LaunchAtLogin.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000005 /* OnAirCompanion.app */,
+				C30000000000000000000008 /* OnAirCompanionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000008 /* OnAirCompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000007 /* TeamsMessageTests.swift */,
+				C3000000000000000000000B /* DebouncerTests.swift */,
+				C3000000000000000000000D /* PluginMessageTests.swift */,
+			);
+			path = OnAirCompanionTests;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000010 /* AppState.swift */,
+				C3000000000000000000000C /* PluginMessage.swift */,
+				C30000000000000000000006 /* TeamsMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C50000000000000000000001 /* OnAirCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C80000000000000000000002 /* Build configuration list for PBXNativeTarget "OnAirCompanion" */;
+			buildPhases = (
+				C60000000000000000000001 /* Sources */,
+				C60000000000000000000002 /* Resources */,
+				C60000000000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnAirCompanion;
+			productName = OnAirCompanion;
+			productReference = C30000000000000000000005 /* OnAirCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C50000000000000000000003 /* OnAirCompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C80000000000000000000003 /* Build configuration list for PBXNativeTarget "OnAirCompanionTests" */;
+			buildPhases = (
+				C60000000000000000000004 /* Sources */,
+				C60000000000000000000005 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = OnAirCompanionTests;
+			productName = OnAirCompanionTests;
+			productReference = C30000000000000000000008 /* OnAirCompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		CA0000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C50000000000000000000002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C50000000000000000000001;
+			remoteInfo = OnAirCompanion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		C90000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C50000000000000000000001 /* OnAirCompanion */;
+			targetProxy = CA0000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXProject section */
+		C50000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = C80000000000000000000001 /* Build configuration list for PBXProject "OnAirCompanion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C40000000000000000000001 /* Project Root */;
+			productRefGroup = C40000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C50000000000000000000001 /* OnAirCompanion */,
+				C50000000000000000000003 /* OnAirCompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C60000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20000000000000000000003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20000000000000000000001 /* OnAirCompanionApp.swift in Sources */,
+				C20000000000000000000002 /* MenuBarView.swift in Sources */,
+				C20000000000000000000004 /* TeamsMessage.swift in Sources */,
+				C20000000000000000000006 /* TeamsMonitor.swift in Sources */,
+				C20000000000000000000007 /* Debouncer.swift in Sources */,
+				C20000000000000000000009 /* PluginMessage.swift in Sources */,
+				C2000000000000000000000B /* PluginClient.swift in Sources */,
+				C2000000000000000000000C /* ServerDiscovery.swift in Sources */,
+				C2000000000000000000000D /* AppState.swift in Sources */,
+				C2000000000000000000000E /* AppCoordinator.swift in Sources */,
+				C2000000000000000000000F /* SettingsView.swift in Sources */,
+				C20000000000000000000010 /* LaunchAtLogin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20000000000000000000005 /* TeamsMessageTests.swift in Sources */,
+				C20000000000000000000008 /* DebouncerTests.swift in Sources */,
+				C2000000000000000000000A /* PluginMessageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C60000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C70000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				BUILD_DIR = "$(SRCROOT)/dist";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C70000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				BUILD_DIR = "$(SRCROOT)/dist";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C70000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alampros.OnAirCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C70000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alampros.OnAirCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C70000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alampros.OnAirCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnAirCompanion.app/Contents/MacOS/OnAirCompanion";
+			};
+			name = Debug;
+		};
+		C70000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alampros.OnAirCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnAirCompanion.app/Contents/MacOS/OnAirCompanion";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C80000000000000000000001 /* Build configuration list for PBXProject "OnAirCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70000000000000000000001 /* Debug */,
+				C70000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C80000000000000000000002 /* Build configuration list for PBXNativeTarget "OnAirCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70000000000000000000003 /* Debug */,
+				C70000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C80000000000000000000003 /* Build configuration list for PBXNativeTarget "OnAirCompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70000000000000000000005 /* Debug */,
+				C70000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = C50000000000000000000002 /* Project object */;
+}

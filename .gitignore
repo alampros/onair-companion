@@ -1,0 +1,12 @@
+node_modules/
+
+# Xcode / Swift
+DerivedData/
+build/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+.DS_Store
+.build/
+dist/
