@@ -4,7 +4,7 @@
 
 macOS menubar-only app (SwiftUI, Swift 6 strict concurrency) that monitors Microsoft Teams meeting status via a local WebSocket API and forwards it to [homebridge-onair](https://github.com/alampros/homebridge-onair) plugin servers discovered via Bonjour/mDNS. No third-party dependencies -- Apple frameworks only.
 
-**Requires macOS 26+ (Tahoe).**
+**Requires macOS 15+ (Sequoia).**
 
 ## Build & test
 
