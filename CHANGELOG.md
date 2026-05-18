@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/alampros/onair-companion/compare/v1.1.1...v1.1.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **build:** build target ([5f9a6d0](https://github.com/alampros/onair-companion/commit/5f9a6d0932390f717d11b51c663cd06e36711d7f))
+
 ## [1.1.1](https://github.com/alampros/onair-companion/compare/v1.1.0...v1.1.1) (2026-05-18)
 
 
