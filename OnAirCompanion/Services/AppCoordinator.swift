@@ -109,6 +109,34 @@ final class AppCoordinator {
         serverDiscovery.stopBrowsing()
     }
 
+    // MARK: - Force Reconnect
+
+    /// Force reconnect all services.
+    func reconnect() {
+        logger.info("Force reconnect requested")
+
+        // Reset plugin connection
+        pluginClient.disconnect()
+        connectedServerURL = nil
+        lastSentOnCall = nil
+        lastSentMuted = nil
+
+        // Restart Teams
+        teamsMonitor.disconnect()
+        teamsMonitor.connect()
+
+        // Restart discovery
+        serverDiscovery.stopBrowsing()
+        serverDiscovery.startBrowsing()
+
+        // If a server is already selected, reconnect plugin immediately
+        if let server = serverDiscovery.selectedServer {
+            let occupantId = UserDefaults.standard.string(forKey: "occupantId") ?? ""
+            connectedServerURL = server.url
+            pluginClient.connect(to: server.url, occupantId: occupantId)
+        }
+    }
+
     // MARK: - Sleep / Wake
 
     /// Register for system sleep and wake notifications so we can tear down

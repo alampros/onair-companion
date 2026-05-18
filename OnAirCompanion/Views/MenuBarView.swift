@@ -37,11 +37,22 @@ struct MenuBarView: View {
         return "Plugin: Disconnected"
     }
 
+    private var canReconnect: Bool {
+        coordinator.teamsMonitor.connectionState != .connected
+            || coordinator.pluginClient.connectionState != .connected
+    }
+
     var body: some View {
         Text(statusText)
         Divider()
         Text(teamsText)
         Text(pluginText)
+        Divider()
+        Button("Reconnect") {
+            coordinator.reconnect()
+        }
+        .keyboardShortcut("r")
+        .disabled(!canReconnect)
         Divider()
         Button("Settings...") {
             openSettings()
