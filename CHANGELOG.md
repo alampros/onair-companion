@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/alampros/onair-companion/compare/v1.1.0...v1.1.1) (2026-05-18)
+
+
+### Bug Fixes
+
+* **build:** consolidate workflows ([5b4b66e](https://github.com/alampros/onair-companion/commit/5b4b66e444dfbc1c6dda8c4793f2dac02fae16fe))
+
 ## [1.1.0](https://github.com/alampros/onair-companion/compare/v1.0.0...v1.1.0) (2026-05-18)
 
 
