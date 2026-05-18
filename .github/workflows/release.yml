@@ -40,23 +40,24 @@ jobs:
           xcodebuild -project OnAirCompanion.xcodeproj \
             -scheme OnAirCompanion \
             -configuration Release \
-            -derivedDataPath DerivedData \
+            ARCHS="arm64 x86_64" \
+            ONLY_ACTIVE_ARCH=NO \
             build
 
       - name: Package
         run: |
-          cd DerivedData/Build/Products/Release
+          cd dist/Release
           zip -r "OnAirCompanion-${{ needs.release-please.outputs.tag_name }}.zip" OnAirCompanion.app
 
       - name: Upload to Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload "${{ needs.release-please.outputs.tag_name }}" DerivedData/Build/Products/Release/OnAirCompanion-*.zip
+        run: gh release upload "${{ needs.release-please.outputs.tag_name }}" dist/Release/OnAirCompanion-*.zip
 
       - name: Calculate SHA256
         id: sha256
         run: |
-          SHA256=$(shasum -a 256 DerivedData/Build/Products/Release/OnAirCompanion-*.zip | awk '{ print $1 }')
+          SHA256=$(shasum -a 256 dist/Release/OnAirCompanion-*.zip | awk '{ print $1 }')
           echo "sha256=$SHA256" >> $GITHUB_OUTPUT
 
       - name: Checkout tap repo
