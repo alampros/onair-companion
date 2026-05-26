@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/alampros/onair-companion/compare/v1.1.2...v1.1.3) (2026-05-18)
+
+
+### Bug Fixes
+
+* **build:** also test multiarch ([988da6a](https://github.com/alampros/onair-companion/commit/988da6aa57a38a81d001e5dce1fa9bf212edbca2))
+
 ## [1.1.2](https://github.com/alampros/onair-companion/compare/v1.1.1...v1.1.2) (2026-05-18)
 
 
